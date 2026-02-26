@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main()
+/*int main()
+
 {
     int arr[]={1,2,3,4,5,6,7,8,9}; 
     int d=3;
@@ -21,7 +22,6 @@ int main()
     //     arr[i]=arr[i+d];
     // }
 
-    
     // int j=0;
     // for(int i=n-d;i<n;i++)
     // {
@@ -40,4 +40,33 @@ int main()
         cout<<arr[i]<<" ";
     }
 
+}*/
+
+int main()
+{
+    int arr[]={1,2,3,4,5,6,7};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    int d=3;
+    reverse(arr,arr+d);
+    reverse(arr+d,arr+n);
+    reverse(arr,arr+n);
+
+    for(int i=0;i<n;i++)
+    {
+        cout<<arr[i]<<" ";
+    }
+    return 0;
 }
+
+//we can also implement the reversse function by ourself
+/*void reverse(int arr[],int start,int end)
+{
+    while(start<=end)
+    {
+        int temp=arr[start];
+        arr[start]=arr[end];    
+        arr[end]=temp;
+        start++;
+        end--;
+    }
+}*/
