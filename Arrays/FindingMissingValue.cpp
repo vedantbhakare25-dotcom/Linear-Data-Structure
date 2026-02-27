@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+// my brute force approach
 /*int main()
 {
     int arr[]={1,2,3,5};
@@ -28,16 +29,43 @@ using namespace std;
     }
 }*/
 
-int main()
+//striver's brute force
+
+/*int main()
 {
- int arr[] = {1,2,3,5};
-    int n = sizeof(arr)/sizeof(arr[0]);
+    int arr[]={1,2,3,5};
+    int n=5;
+    int flag=0;
+    for(int i=1;i<=n;i++)
+    {
+        int flag=0;
+        for(int j=0;j<n-1;j++)
+        {
+            if(arr[j]==i)
+            {
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0)
+        {
+            cout<<"missing no. is="<<i;
+        }
+    }
+}*/
 
-    int total = (n+1)*(n+2)/2;  
-    int actual = 0;
+/*int main()
+{
+    int arr[]={1,2,3,5};
+    int size=sizeof(arr)/sizeof(arr[0]);
+    int n=5;
+    int sum=(n*(n+1)/2);
+    int sum2=0;
+    for(int i=0;i<size;i++)
+    {
+        sum2+=arr[i];
+    }
+    int missing=sum-sum2;
+    cout<<"missing number is ="<<missing;
+}*/
 
-    for(int i = 0; i < n; i++)
-        actual += arr[i];
-
-    cout << (total - actual) << " was missing";
-}
