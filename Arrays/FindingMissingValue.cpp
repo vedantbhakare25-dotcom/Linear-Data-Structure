@@ -54,6 +54,8 @@ using namespace std;
     }
 }*/
 
+//summation optimized approach
+
 /*int main()
 {
     int arr[]={1,2,3,5};
@@ -68,4 +70,23 @@ using namespace std;
     int missing=sum-sum2;
     cout<<"missing number is ="<<missing;
 }*/
+
+//XOR optimized approach
+
+int main()
+{
+    int arr[]={1,2,4,5};
+    int n=5;
+    int size=sizeof(arr)/sizeof(arr[0]);
+    int xor1=0;int xor2=0;
+    for(int i =0;i<n-1;i++)
+    {
+        xor2=xor2^arr[i];
+        xor1=xor1^(i+1);
+    }
+    xor1^=n;
+    int missing=xor1^xor2;
+    cout<<"missing is = "<<missing;
+}
+
 
