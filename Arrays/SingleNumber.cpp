@@ -23,6 +23,7 @@ using namespace std;
 //         if(cnt==0)
 //         {
 //             single=arr[i];
+
 //         }
 //         cnt=0;
 //     }
