@@ -42,3 +42,22 @@ int main()
     }
     cout<<single;
 }
+
+//using hashing
+// int main()
+// {  
+//     int arr[]={1,2,1,4,4};
+//     int n=sizeof(arr)/sizeof(arr[0]);
+//     map<int,int> mpp;
+//     for(int i=0;i<n;i++)
+//     {
+//         mpp[arr[i]]++;
+//     }
+//     for(auto it:mpp)
+//     {
+//         if(it.second==1)//         {
+//             cout<<it.first;      
+//         }
+//     }
+//     return 0;
+// }
