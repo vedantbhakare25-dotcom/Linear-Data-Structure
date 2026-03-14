@@ -1,9 +1,10 @@
 {
-    "files.associations": {
-        "iostream": "cpp",
-        "chrono": "cpp",
-        "text_encoding": "cpp",
-        "typeindex": "cpp",
-        "typeinfo": "cpp"
-    }
+  "files.associations": {
+    "iostream": "cpp",
+    "chrono": "cpp",
+    "text_encoding": "cpp",
+    "typeindex": "cpp",
+    "typeinfo": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "enabled"
 }
